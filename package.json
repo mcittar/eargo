@@ -7,22 +7,32 @@
     "lib": "lib",
     "test": "test"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Michael Cittar <mcittar@gmail.com>",
-  "license": "ISC",
   "dependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-redux": "^5.0.5",
+    "react": "^15.6.1",
     "react-router": "^4.1.1",
+    "react-redux": "^5.0.5",
     "redux": "^3.7.1",
     "webpack": "^3.0.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "boilerplate": "react-jarb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcittar/eargo.git"
+  },
+  "keywords": [],
+  "author": "Michael Cittar <mcittar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcittar/eargo/issues"
+  },
+  "homepage": "https://github.com/mcittar/eargo#readme"
 }
