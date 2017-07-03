@@ -1,5 +1,3 @@
-import $ from '@rtorr/ajax-only';
-
 export const scrapeGif = () => {
   return $.ajax({
     method: 'GET',
