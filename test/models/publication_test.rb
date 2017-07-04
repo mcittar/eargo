@@ -7,7 +7,7 @@
 #  name       :string           not null
 #  site_type  :string
 #  editor     :string           not null
-#  owner      :string           not null
+#  owner      :string
 #  url        :string           not null
 #  year       :date             not null
 #  creator    :string

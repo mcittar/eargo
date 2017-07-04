@@ -8,26 +8,24 @@
 
 # first = HTTParty.get('http://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Gizmodo&rvsection=0')
 # first = HTTParty.get('http://dbpedia.org/data/Gizmodo.json')
-gizmodo = Wikipedia.find('Gizmodo')
-params = {
-  name: gizmodo.title,
-  logo: gizmodo.image_urls[2],
-  editor: "someone",
-  owner: "person",
-  url: gizmodo.fullurl,
-  year: Time.now,
-  creator: 'Rojas'
-}
-box = Infoboxer.wikipedia.get('Gizmodo').infobox.variables.map(&:name)
-box.each do |keyword|
-  if keyword == 'editor' || keyword == 'owner' || keyword == 'creator' || keyword == 'year'
-    params[keyword.to_sym] = Infoboxer.wikipedia.get('Gizmodo').infobox.fetch(keyword).first.text
-  elsif keyword == 'author'
-    params[:creator] = Infoboxer.wikipedia.get('Gizmodo').infobox.fetch(keyword).first.text
-  elsif keyword == '2'
-    params[:year] = Infoboxer.wikipedia.get('Gizmodo').infobox.fetch(keyword).first.text
-  end
-end
-p1 = Publication.new(params)
-byebug
-box
+
+page = Wikipedia.find('The Verge')
+box = Infoboxer.wikipedia.get('The Verge').infobox.variables.map(&:name)
+
+params = Publication.wiki_search('Gizmodo')
+gizmodo = Publication.create(params)
+
+params2 = Publication.wiki_search('Popular Science')
+popular_science = Publication.create(params2)
+
+params3 = Publication.wiki_search('PC Magazine')
+popular_science = Publication.create(params3)
+
+params4 = Publication.wiki_search('Techcrunch')
+popular_science = Publication.create(params4)
+
+params5 = Publication.wiki_search('The Verge')
+popular_science = Publication.create(params5)
+
+params6 = Publication.wiki_search('GeekWire')
+popular_science = Publication.create(params6)

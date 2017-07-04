@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20170703191108) do
     t.string   "name",       null: false
     t.string   "site_type"
     t.string   "editor",     null: false
-    t.string   "owner",      null: false
+    t.string   "owner"
     t.string   "url",        null: false
     t.date     "year",       null: false
     t.string   "creator"
