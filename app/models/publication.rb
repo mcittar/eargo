@@ -16,6 +16,7 @@
 #
 
 class Publication < ApplicationRecord
+  validates :logo, :name, :url, :year, presence: true
 
   def self.wiki_search(name)
     page = Wikipedia.find(name)
@@ -36,7 +37,8 @@ class Publication < ApplicationRecord
 
     unless params[:year]
       content = page.content
-      params[:year] = content.match(/start\sdate\s+\K.*(\|\d{4}\|)/)[1].to_s.tr('|', '')
+      year = content.match(/start\sdate\s+\K.*(\|\d{4}\|)/)[1].to_s.tr('|', '').to_i
+      params[:year] = Date.new(year)
     end
 
     params

@@ -10,9 +10,11 @@
 # first = HTTParty.get('http://dbpedia.org/data/Gizmodo.json')
 
 page = Wikipedia.find('The Verge')
-box = Infoboxer.wikipedia.get('The Verge').infobox.variables.map(&:name)
+box = Infoboxer.wikipedia.get('GeekWire').infobox.variables.map(&:name)
 
+byebug
 params = Publication.wiki_search('Gizmodo')
+byebug
 gizmodo = Publication.create(params)
 
 params2 = Publication.wiki_search('Popular Science')

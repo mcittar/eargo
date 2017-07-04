@@ -4,7 +4,7 @@ class CreatePublications < ActiveRecord::Migration[5.0]
       t.string :logo, null: false
       t.string :name, null: false
       t.string :site_type
-      t.string :editor, null: false
+      t.string :editor
       t.string :owner
       t.string :url, null: false
       t.date :year, null: false
