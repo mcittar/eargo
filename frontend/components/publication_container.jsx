@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getPublications: () => dispatch(scrapePublications)
+  getPublications: () => dispatch(scrapePublications())
 });
 
 export default connect(

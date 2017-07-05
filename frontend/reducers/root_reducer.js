@@ -4,8 +4,6 @@ import GifReducer from './gif_reducer';
 import PublicationReducer from './publication_reducer';
 
 const RootReducer = combineReducers({
-  errors: ErrorsReducer,
-  gif: GifReducer,
   publications: PublicationReducer
 });
 
