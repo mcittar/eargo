@@ -5,13 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rb-fsevent', '~> 0.9.8'
 gem 'infoboxer'
 gem 'wikipedia-client'
 gem 'wikipedia'
-gem "dbpedia"
 gem 'annotate'
-gem 'httparty'
 gem 'pry-rails'
 gem 'date_validator', '~> 0.9.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
