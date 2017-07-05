@@ -2,7 +2,7 @@ class PublicationsController < ApplicationController
 
   def index
     @publications = Publication.all
-    render :show
+    render 'publications/index.json.jbuilder'
   end
 
 end

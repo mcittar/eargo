@@ -12,9 +12,7 @@
 page = Wikipedia.find('The Verge')
 box = Infoboxer.wikipedia.get('GeekWire').infobox.variables.map(&:name)
 
-byebug
 params = Publication.wiki_search('Gizmodo')
-byebug
 gizmodo = Publication.create(params)
 
 params2 = Publication.wiki_search('Popular Science')
