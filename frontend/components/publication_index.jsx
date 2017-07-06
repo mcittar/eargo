@@ -13,16 +13,15 @@ class PublicationIndex extends React.Component {
   render() {
     let display = [];
     display = this.props.publications.map(publication => {
-      return <li key={ publication.id }>
-              <Publication info={ publication }/>
-            </li>;
+      return <Publication key={ publication.id } info={ publication }/>;
     });
     return(
-      <div>
-        <ul>
+      <section className='wrapper'>
+        <div className='index'>
           { display }
-        </ul>
-      </div>
+        </div>
+      </section>
+
     );
   }
 }

@@ -9,8 +9,8 @@
 # first = HTTParty.get('http://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Gizmodo&rvsection=0')
 # first = HTTParty.get('http://dbpedia.org/data/Gizmodo.json')
 
-page = Wikipedia.find('The Verge')
-box = Infoboxer.wikipedia.get('GeekWire').infobox.variables.map(&:name)
+# page = Wikipedia.find('The Verge')
+# box = Infoboxer.wikipedia.get('Gizmodo').infobox.variables.map(&:name)
 
 params = Publication.wiki_search('Gizmodo')
 gizmodo = Publication.create(params)
@@ -19,13 +19,13 @@ params2 = Publication.wiki_search('Popular Science')
 popular_science = Publication.create(params2)
 
 params3 = Publication.wiki_search('PC Magazine')
-popular_science = Publication.create(params3)
+pc_magazine = Publication.create(params3)
 
 params4 = Publication.wiki_search('Techcrunch')
-popular_science = Publication.create(params4)
+tech_crunch = Publication.create(params4)
 
 params5 = Publication.wiki_search('The Verge')
-popular_science = Publication.create(params5)
+the_verge = Publication.create(params5)
 
 params6 = Publication.wiki_search('GeekWire')
-popular_science = Publication.create(params6)
+geek_wire = Publication.create(params6)

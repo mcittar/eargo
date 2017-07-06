@@ -9,16 +9,20 @@ class Publication extends React.Component {
     const { info } = this.props;
     console.log(this.props);
     return(
-      <section className='spotlight'>
-        <h1>{ info.id }</h1>
-        <h1>{ info.name }</h1>
-        <h1>{ info.url }</h1>
-        <h1>{ info.logo }</h1>
-        <h1>{ info.creator }</h1>
-        <h1>{ info.editor }</h1>
-        <h1>{ info.owner }</h1>
-        <h1>{ info.year }</h1>
-      </section>
+        <section className='spotlight'>
+          <div className='image'>
+            <img src={ info.logo }/>
+          </div>
+          <div className='content'>
+            <div>
+              <span>{ info.name }</span><span>{ info.site_type }</span>
+            </div>
+            <div>Launched in { info.year } by { info.creator }</div>
+            <div>{ info.url }</div>
+            <div>Editor: { info.editor }</div>
+            <div>Owned By: { info.owner }</div>
+          </div>
+        </section>
     );
   }
 }
