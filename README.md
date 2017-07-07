@@ -9,7 +9,8 @@ Ruby, Javascript, Rails, and PostgreSQL are required for this project
 3. Run `npm install` to install necessary npm modules
 4. Run the following command in order to set up and seed the database: `rake db:setup`
 5. Run `webpack` to set-up the javascript bundle
-5. Start the built in rails server: `rails server`
+6. Start the built in rails server: `rails server`
+7. Navigate to `http://localhost:3000/` to see the final result
 
 The app should now be up and running. If at any point you need to reset the database you can run `rake db:reset` and restart the server.
 
