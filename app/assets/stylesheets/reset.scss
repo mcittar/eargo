@@ -18,6 +18,14 @@ span, article, footer, time, small, h3, h4, h5 {
   background: transparent;
 }
 
+a {
+  color: $eargo-blue;
+}
+
+a:hover {
+  color: $eargo-blue-highlight;
+}
+
 html, body {
   height: 100%;
 }

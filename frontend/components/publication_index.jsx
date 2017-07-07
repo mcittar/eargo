@@ -17,6 +17,12 @@ class PublicationIndex extends React.Component {
     });
     return(
       <section className='wrapper'>
+        <div className='header'>
+          <div className='eargo-logo'>
+            <img src='https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Logo_for_company_Eargo.jpg/220px-Logo_for_company_Eargo.jpg'></img>
+          </div>
+          <span className='mentions'>Mentions</span>
+        </div>
         <div className='index'>
           { display }
         </div>

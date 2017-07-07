@@ -35,6 +35,8 @@ class Publication < ApplicationRecord
         params[:creator] = box.fetch(keyword).first.text
       elsif keyword == 'publisher'
         params[:owner] = box.fetch(keyword).first.text
+      elsif keyword == 'type'
+        params[:site_type] = box.fetch(keyword).first.text
       end
     end
 
