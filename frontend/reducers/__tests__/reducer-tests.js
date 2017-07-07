@@ -2,8 +2,8 @@ import PublicationReducer from '../publication_reducer';
 import RootReducer from '../root_reducer';
 import { createStore } from 'redux';
 
-const pub1 = { data: { name: "TEST" } };
-const pub2 = { data: { name: "SECONDTEST" } };
+const pub1 = { name: "TEST" };
+const pub2 = { name: "SECONDTEST" };
 
 describe('Reducers', () => {
   describe('PublicationReducer', () => {
