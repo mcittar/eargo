@@ -12,7 +12,7 @@ describe('Reducers', () => {
       expect(PublicationReducer(undefined, {})).toEqual([]);
     });
 
-    describe('handling the RECEIVE_GIF action', () => {
+    describe('handling the RECEIVE_PUBLICATIONS action', () => {
       let action, testPub;
 
       beforeEach(() => {
