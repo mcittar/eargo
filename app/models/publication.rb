@@ -17,6 +17,7 @@
 
 class Publication < ApplicationRecord
   validates :logo, :name, :url, :year, presence: true
+  validates :year, date: true
 
   def self.wiki_search(name)
     page = Wikipedia.find(name)
